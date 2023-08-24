@@ -9,7 +9,7 @@
     "build": "pnpm scripts run build",
     "test:unit": "pnpm scripts run test:unit",
     "scripts": "better-scripts",
-    "release": "conventional-changelog -pa angular -i CHANGELOG.md -s -r 0",
+    "release": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "preinstall": "npx only-allow pnpm",
     "precommit": "lint-staged",
     "postinstall": "husky install",
