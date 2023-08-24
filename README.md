@@ -1,0 +1,1 @@
+一个使用 [pnpm](https://pnpm.io) 搭建的monorepo项目模板
