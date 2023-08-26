@@ -1,7 +1,4 @@
 {
   "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "types": ["vite/client", "jest", "node"],
-  },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "__tests__/**/*.ts"],
 }

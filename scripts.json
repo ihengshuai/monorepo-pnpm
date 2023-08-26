@@ -3,21 +3,26 @@
   "dev": {
     "alias": "Dev",
     "desc": "正在启动本地开发服务",
-    "command": "echo 22"
+    "command": "pnpm --filter examples dev"
   },
   "build": {
     "alias": "Build",
     "desc": "打包组件",
-    "command": "pnpm --filter pkg1 build"
+    "command": "turbo run build --filter=!examples --filter=!docs"
   },
-  "docs": {
-    "alias": "Docs",
+  "docs:dev": {
+    "alias": "Docs:dev",
     "desc": "正在启动本地文档",
     "command": "pnpm --filter docs dev"
+  },
+  "docs:build": {
+    "alias": "Docs:build",
+    "desc": "正在打包文档",
+    "command": "pnpm --filter docs build"
   },
   "test:unit": {
     "alias": "Unit Test",
     "desc": "单元测试",
-    "command": "pnpm --filter pkg1 test:unit"
+    "command": "jest --config jest.config.ts"
   }
 }

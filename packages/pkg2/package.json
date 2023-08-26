@@ -1,8 +1,13 @@
 {
-  "name": "pkg2",
+  "name": "@mono/pkg2",
   "version": "0.0.1",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p ./tsconfig.build.json"
   }
 }

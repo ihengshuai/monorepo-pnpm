@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-// import vueJsx from "@vitejs/plugin-vue-jsx";
 import path from "path";
 import dotenv from "dotenv";
 import fs from "fs";
@@ -9,8 +8,9 @@ const __isDev__ = config.parsed?.NODE_ENV !== "production";
 
 const alias = createAlias();
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  // plugins: [vueJsx()],
+  root: path.resolve(__dirname, "pages"),
   resolve: {
     alias,
   },
